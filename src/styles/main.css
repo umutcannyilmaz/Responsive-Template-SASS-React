@@ -1,0 +1,128 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+.container {
+  background-color: red;
+  margin: 0 10px;
+}
+.container .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: gray;
+  font-size: 30px;
+}
+.container .sliderContainer {
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  font-size: 10rem;
+}
+.container .boxes {
+  height: 200px;
+  display: flex;
+}
+.container .boxes .box {
+  height: 100%;
+  background-color: bisque;
+  border: 1px solid black;
+  flex: 1;
+}
+.container .differentboxes {
+  height: 200px;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+.container .differentboxes .db2 {
+  flex: 2;
+  border-right: 1px solid black;
+}
+.container .differentboxes .db1 {
+  flex: 1;
+}
+.container .wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 0;
+  gap: 30px;
+}
+.container .wrapper ul li {
+  display: inline;
+  list-style: none;
+}
+.container .wrapper ul li img {
+  width: 100%;
+}
+.container .footer {
+  height: 30vh;
+  background-color: lawngreen;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+.container .footer .footeritem {
+  flex: 1;
+  height: 30vh;
+  border-right: 1px solid black;
+}
+.container .footer .footeritem ul {
+  display: flex;
+  height: 30vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: 1px solid black;
+}
+.container .footer .footeritem ul li {
+  display: block;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  border: 1px solid black;
+  padding: 4px;
+  margin: 2px;
+  font-size: 1.6rem;
+}
+.container .yüzde {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  background-color: aqua;
+  gap: 2px;
+}
+.container .yüzde .yüzdeitem {
+  display: flex;
+  flex: 1;
+  width: 50%;
+  height: 50%;
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 8px;
+  }
+  .boxes {
+    flex-direction: column;
+  }
+  .differentboxes {
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footeritem:nth-child(n+2) {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
